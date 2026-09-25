@@ -89,3 +89,9 @@
 .layoutMoveSurface{position:absolute;inset:0;z-index:12;cursor:move;background:rgba(10,132,255,.025);border:1px dashed rgba(10,132,255,.28);border-radius:14px}
 .layoutMoveSurface span{position:absolute;top:16px;left:50%;transform:translateX(-50%);padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.94);box-shadow:0 4px 18px #00000012;font-size:11px;font-weight:700;color:#0a84ff;pointer-events:none}
 .mapV2:has(.layoutMoveSurface) .structureLayer{pointer-events:none}
+
+/* Precision editor: handles only in point mode; wide invisible hit area via SVG stroke */
+.structureLayer .wallSegment{pointer-events:stroke}
+.structureLayer .vertexHandle{opacity:1;pointer-events:all;fill:#fff;stroke:#0a84ff;stroke-width:.35;cursor:move}
+.wallActions{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.wallActions button{white-space:nowrap}

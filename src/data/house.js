@@ -15,15 +15,40 @@ export const rooms=[
 {id:'HOS-A14',name:'Garagem / Portão',area:null,status:'provisional',devices:['HOS-D028','HOS-D029','HOS-D032']},
 {id:'HOS-A15',name:'Pátio de serviço / Jardim',area:null,status:'provisional',devices:['HOS-D030','HOS-D031']}
 ];
-export const circuits=[
-{id:'DJ-00',rating:'C40',name:'Geral',state:'confirmed'},
-{id:'DJ-01',rating:'C20',name:'Bomba da lavanderia',state:'confirmed'},
-{id:'DJ-02',rating:'C20',name:'Chuveiro da suíte',state:'confirmed'},
-{id:'DJ-03',rating:'C16',name:'Sala + corredor · iluminação e tomadas',state:'confirmed'},
-{id:'DJ-04',rating:'C16',name:'Chuveiro social',state:'confirmed'},
-{id:'DJ-05',rating:'C25',name:'A identificar',state:'pending'},
-{id:'DJ-06',rating:'C20',name:'A identificar',state:'pending'},
-{id:'DJ-07',rating:'C20',name:'A identificar',state:'pending'},
-{id:'DJ-08',rating:'C16',name:'A identificar',state:'pending'}
+export const devices=[
+{id:'HOS-D001',room:'HOS-A01',name:'Quadro elétrico',category:'Energia',kind:'panel',qty:1,state:'observed',x:11,y:48},
+{id:'HOS-D002',room:'HOS-A01',name:'Bomba da lavanderia',category:'Água',kind:'pump',qty:1,state:'observed',x:14,y:58},
+{id:'HOS-D003',room:'HOS-A01',name:'Máquina de lavar',category:'Energia',kind:'appliance',qty:1,state:'observed',x:17,y:51},
+{id:'HOS-D004',room:'HOS-A01',name:'Interruptor',category:'Luzes',kind:'switch',qty:1,state:'observed',x:19,y:43},
+{id:'HOS-D005',room:'HOS-A01',name:'Tomada da bancada',category:'Energia',kind:'outlet',qty:1,state:'observed',x:17,y:62},
+{id:'HOS-D006',room:'HOS-A01',name:'Luminária de teto',category:'Luzes',kind:'light',qty:1,state:'observed',x:14,y:37},
+{id:'HOS-D007',room:'HOS-A02',name:'Fogão / cooktop',category:'Energia',kind:'appliance',qty:1,state:'observed',x:25,y:56},
+{id:'HOS-D008',room:'HOS-A02',name:'Purificador',category:'Água',kind:'water',qty:1,state:'observed',x:27,y:47},
+{id:'HOS-D009',room:'HOS-A02',name:'Eletrodoméstico de bancada',category:'Energia',kind:'appliance',qty:1,state:'observed',x:30,y:56},
+{id:'HOS-D010',room:'HOS-A02',name:'Tomadas da bancada',category:'Energia',kind:'outlet',qty:2,state:'observed',x:30,y:45},
+{id:'HOS-D011',room:'HOS-A02',name:'Interruptores',category:'Luzes',kind:'switch',qty:1,state:'observed',x:32,y:52},
+{id:'HOS-D012',room:'HOS-A03',name:'Comando do banheiro',category:'Luzes',kind:'switch',qty:1,state:'observed',x:35,y:54},
+{id:'HOS-D013',room:'HOS-A03',name:'Chuveiro elétrico da suíte',category:'Energia',kind:'shower',qty:1,state:'confirmed',x:36,y:64},
+{id:'HOS-D014',room:'HOS-A04',name:'Placas junto à cama',category:'Energia',kind:'outlet',qty:3,state:'observed',x:43,y:49},
+{id:'HOS-D015',room:'HOS-A04',name:'Luz do quarto',category:'Luzes',kind:'light',qty:1,state:'observed',x:45,y:38},
+{id:'HOS-D016',room:'HOS-A05',name:'Tomadas baixas',category:'Energia',kind:'outlet',qty:2,state:'observed',x:54,y:57},
+{id:'HOS-D017',room:'HOS-A05',name:'Interruptor',category:'Luzes',kind:'switch',qty:1,state:'observed',x:57,y:48},
+{id:'HOS-D018',room:'HOS-A05',name:'TV',category:'Energia',kind:'tv',qty:1,state:'observed',x:55,y:40},
+{id:'HOS-D019',room:'HOS-A06',name:'Chuveiro elétrico social',category:'Energia',kind:'shower',qty:1,state:'confirmed',x:63,y:57},
+{id:'HOS-D020',room:'HOS-A07',name:'Placa junto à mesa',category:'Energia',kind:'outlet',qty:1,state:'observed',x:70,y:54},
+{id:'HOS-D021',room:'HOS-A07',name:'Luz da sala de jantar',category:'Luzes',kind:'light',qty:1,state:'observed',x:72,y:39},
+{id:'HOS-D022',room:'HOS-A08',name:'TV principal',category:'Energia',kind:'tv',qty:1,state:'observed',x:82,y:45},
+{id:'HOS-D023',room:'HOS-A08',name:'Eletrônico junto à TV',category:'Energia',kind:'appliance',qty:1,state:'observed',x:84,y:53},
+{id:'HOS-D024',room:'HOS-A08',name:'Tomadas / placas',category:'Energia',kind:'outlet',qty:2,state:'observed',x:86,y:60},
+{id:'HOS-D025',room:'HOS-A08',name:'Porta para o pátio',category:'Segurança',kind:'door',qty:1,state:'observed',x:89,y:48},
+{id:'HOS-D026',room:'HOS-A09',name:'Luzes do corredor',category:'Luzes',kind:'light',qty:2,state:'observed',x:49,y:28},
+{id:'HOS-D027',room:'HOS-A09',name:'Interruptores do corredor',category:'Luzes',kind:'switch',qty:2,state:'observed',x:57,y:29},
+{id:'HOS-D028',room:'HOS-A14',name:'Portão de correr',category:'Segurança',kind:'gate',qty:1,state:'observed',x:93,y:73},
+{id:'HOS-D029',room:'HOS-A14',name:'Motor do portão',category:'Segurança',kind:'gateMotor',qty:1,state:'observed',x:91,y:68},
+{id:'HOS-D030',room:'HOS-A15',name:'Bomba externa',category:'Água',kind:'pump',qty:1,state:'observed',x:76,y:78},
+{id:'HOS-D031',room:'HOS-A15',name:'Tomada externa',category:'Energia',kind:'outlet',qty:1,state:'observed',x:79,y:78},
+{id:'HOS-D032',room:'HOS-A14',name:'Iluminação da cobertura',category:'Luzes',kind:'light',qty:1,state:'provisional',x:87,y:73}
 ];
+export const circuits=[
+{id:'DJ-00',rating:'C40',name:'Geral',state:'confirmed'},{id:'DJ-01',rating:'C20',name:'Bomba da lavanderia',state:'confirmed'},{id:'DJ-02',rating:'C20',name:'Chuveiro da suíte',state:'confirmed'},{id:'DJ-03',rating:'C16',name:'Sala + corredor · iluminação e tomadas',state:'confirmed'},{id:'DJ-04',rating:'C16',name:'Chuveiro social',state:'confirmed'},{id:'DJ-05',rating:'C25',name:'A identificar',state:'pending'},{id:'DJ-06',rating:'C20',name:'A identificar',state:'pending'},{id:'DJ-07',rating:'C20',name:'A identificar',state:'pending'},{id:'DJ-08',rating:'C16',name:'A identificar',state:'pending'}];
 export const layers=['Todos','Luzes','Clima','Energia','Água','Segurança'];

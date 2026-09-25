@@ -72,3 +72,10 @@
 .structureLayer .wallSegment:hover{stroke-width:4;opacity:1}
 .structureLayer .wallSegment:active{cursor:grabbing}
 .structureLayer .wallSegment.selected{stroke:#0071e3;opacity:1}
+
+/* Architectural wall edit refinement */
+.structureLayer circle{opacity:0;pointer-events:none;transition:opacity .15s ease}
+.structureLayer g:hover circle{opacity:.42}
+.structureLayer .wallSegment{stroke-width:1.8}
+.structureLayer .wallSegment:hover{stroke-width:3.2;filter:drop-shadow(0 0 2px rgba(10,132,255,.28))}
+.structureLayer .wallSegment.selected{stroke-width:3.6;filter:drop-shadow(0 0 3px rgba(0,113,227,.32))}

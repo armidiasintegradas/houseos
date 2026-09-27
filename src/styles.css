@@ -157,3 +157,15 @@
 
 /* Configuration is secondary; daily mode no longer exposes a mode switch */
 .homeMode .modeSwitch{display:none}.enterSetup,.exitSetup{margin:14px 10px 10px;width:calc(100% - 20px);display:flex;align-items:center;gap:8px;border:0;background:transparent;border-radius:10px;padding:9px 10px;color:#89919b;font-size:10px;text-align:left}.enterSetup{margin-top:auto}.enterSetup:hover{background:#f3f5f7;color:#404750}.setupBanner{margin:12px 10px 16px;padding:10px;display:flex;gap:8px;align-items:center;border-radius:11px;background:#edf5ff;color:#1769aa}.setupBanner span{display:flex;flex-direction:column}.setupBanner b{font-size:10px}.setupBanner small{font-size:8px;opacity:.72}.exitSetup{background:#fff;border:1px solid #e1e6eb;color:#53606e;font-weight:700}.setupMode .modeNote{margin-top:auto;margin-bottom:5px}
+
+/* Mobile daily use behaves like a simple home-control app */
+.mobileDailyNav{display:none}
+@media(max-width:720px){
+.homeMode>aside{display:none}
+.homeMode .content{padding-bottom:92px}
+.homeMode .mobileBack{display:none}
+.mobileDailyNav{position:fixed;z-index:70;left:10px;right:10px;bottom:10px;height:64px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;padding:4px;background:rgba(250,251,252,.94);backdrop-filter:blur(20px);border:1px solid #e0e5ea;border-radius:18px;box-shadow:0 10px 35px #0002}
+.mobileDailyNav button{height:54px;border:0;background:transparent;border-radius:13px;color:#929aa4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:8px;font-weight:700}
+.mobileDailyNav button svg{width:18px;height:18px}.mobileDailyNav button.active{color:#111;background:#fff;box-shadow:0 1px 5px #0000000d}
+.homeMode .voice{bottom:84px;right:14px;width:46px;height:46px;border-radius:50%;padding:0;display:grid;place-items:center}.homeMode .voice p,.homeMode .voice>span{display:none}.homeMode .voice svg{margin:0}
+}
